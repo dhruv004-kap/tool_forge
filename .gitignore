@@ -1,0 +1,9 @@
+__pycache__
+.venv
+.vscode
+adjetter-kapture-vitos-e44654c16d1d
+.env
+curl_generator_v2.py
+test.py
+prompt.json
+prompt_component.json
