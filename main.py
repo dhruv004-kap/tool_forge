@@ -4,7 +4,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from Routers.action_assistant import actions
 from Routers.prompt_library import library
 
-app = FastAPI(title="Prompt Library & Action builder")
+app = FastAPI(
+        title="Prompt Gallery API",
+        redoc_url=f"/prompt/redoc",
+        docs_url=f"/prompt/docs",
+        openapi_url=f"/prompt/openapi.json",
+    )
 
 app.include_router(actions)
 app.include_router(library)
