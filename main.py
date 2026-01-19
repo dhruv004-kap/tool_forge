@@ -22,6 +22,3 @@ app.add_middleware(
     allow_headers = ["*"],  # allow Authorization, Content-Type etc.
 )
 
-@app.get("/")
-async def welcome():
-    return {"message": "Hello!"}
