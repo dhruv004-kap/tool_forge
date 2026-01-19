@@ -6,9 +6,9 @@ from Routers.prompt_library import library
 
 app = FastAPI(
         title="Prompt Gallery API",
-        redoc_url=f"/prompt/redoc",
-        docs_url=f"/prompt/docs",
-        openapi_url=f"/prompt/openapi.json",
+        redoc_url="/prompt/redoc",
+        docs_url="/prompt/docs",
+        openapi_url="/prompt/openapi.json",
     )
 
 app.include_router(actions)

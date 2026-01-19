@@ -15,7 +15,7 @@ from utils.action_templates import *
 
 
 actions = APIRouter(
-    prefix="/actions",
+    prefix="/prompt/actions",
     tags = ["Actions"]
 )   
 
